@@ -1,0 +1,62 @@
+fieldset
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    margin-top:200px ;
+    background-color: lavender;
+    border-radius: 2rem;
+}
+
+#container
+{
+    display: flex;
+    justify-content: center;
+}
+
+label
+{
+    font-weight: bold;
+}
+
+span
+{
+    color: red;
+}
+#btn-container
+{
+    margin-left:125px ;
+    margin-top: 30px;
+}
+
+button
+{
+    width: 100px;
+    height: 30px;
+    border: 1px dotted gray;
+    border-radius: 2rem;
+}
+
+input
+{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px dotted gray;
+    border-radius: 1rem;
+
+}
+#Department
+{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px dotted gray;
+    border-radius: 1rem;
+}
+#RegisteredData
+{
+    background-color: whitesmoke;
+}

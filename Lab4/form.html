@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id ='container'>
+         <fieldset>
+        <legend>Student Registration</legend>
+    <form id="RegistrationForm" oninput="infoForm()" onsubmit="return Submit(event)">
+            <table>
+                <tr>
+                    <td>
+                        <label for="FirstName">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="FirstName" id="FirstName"/>
+                          <span id="FirstNameError"></span>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        <label for="LastName">Last Name:</label>
+
+                    </td>
+                    <td>
+                        <input type="text" name="LastName" id="LastName"/>
+                        <span id="LastNameError"></span>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                         <label for="StudentId">Student Id:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="StudentId" id="StudentId"/>
+                         <span id="StudentIdError"></span>
+                    </td>
+                </tr>
+                        
+                 <tr>
+                    <td>
+                        <label for="Email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Email" id="Email"/>
+                          <span id="EmailError"></span>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                        <label for="Credit Complete">Credit Completed:</label>
+                    </td>
+                    <td>
+                         <input type="text" name="Credit" id="Credit"/>
+                        <span id="CreditError"></span>
+                        </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                         <label for="Department">Department:</label>
+                    </td>
+                    <td>
+                            <select name="Department" id="Department">
+                            <option>CSE</option>
+                            <option>BBA</option>
+                            <option>Pharmacy</option>
+                            <option>EEE</option>
+                            <option>COE</option>
+                            </select>
+                            <span id="DepartmentError"></span>
+                    </td>
+                </tr>
+
+                
+            </table>
+            <div id="btn-container">
+                   <button id="Button">Submit</button>
+            </div>
+           
+        </form>
+    </fieldset>
+      <fieldset id="RegisteredData">
+        <legend>Registered Students</legend>
+        <div id="StudentListContainer">
+            <p id="noStudent">No Student Registered Yet</p>
+        </div>
+    </fieldset>
+    </div>
+   <script src="form.js"></script>
+</body>
+</html>
